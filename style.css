@@ -227,6 +227,8 @@ p {
   height: 90vh;
   position: relative;
   margin: auto;
+  text-align: center;
+  display: block;
 }
 
 /* Next & previous buttons */
