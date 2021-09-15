@@ -164,11 +164,11 @@ p {
 	position: absolute;
 	z-index: 3;
 	font-family: "Playfair Display", serif;
-	font-size: 4em;
+	font-size: 3em;
 	text-decoration: none;
 	color: black;
 	padding-bottom: 5px;
-	right: 2em;
+	right: 1em;
 	top: 3em;
 	border-bottom: solid 5px #fad43c;
 }
