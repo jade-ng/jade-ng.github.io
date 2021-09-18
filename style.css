@@ -95,6 +95,11 @@ body {
   overflow-x: hidden;
 }
 
+.main img:hover {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
 #welcome {
 	height: 80vh;
 	position: absolute;
@@ -190,6 +195,10 @@ p {
 #biophoto:hover {
 	-webkit-filter: invert(1);
    filter: invert(1);
+}
+
+.noninvert img:hover {
+	 filter: none;
 }
 
 .section {
@@ -311,4 +320,48 @@ p {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  height: 40vh;
+}
+
+div.gallery:hover .desc{
+  font-weight: bold;
+}
+
+div.gallery img {
+  height: 100%;
+  width: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.workdesc {
+  display: none;
+  position: relative;
+  font-weight: lighter;
+  color: white;
+  top: -25vh;
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery:hover .workdesc{
+  display: block;
+}
+
+.gallery a:link {
+	background: none;
+	border: none;
+	color: none;
+}
+
+.gallery a:hover {
+	background: none;
 }
