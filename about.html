@@ -15,11 +15,16 @@
 </head>
 
 <body>
-<div class="sidenav">
+	
+<span style="cursor: pointer" onclick="openNav()"><img id="menu-icon" src="media/menu.svg" alt="Menu Icon"></span>
+	
+<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>		
+	
+<div id="sidenav">
 	<div class="menu">
 	<a href="index.html" id="header">Jade Nguyen</a>
 	
-	<a href="works.html">Works</a>
+	<a href="works.html" id="here">Works</a>
 		<div class="dropdown-container">
 			<a href="vietnam-people-places.html">Vietnam: People/Places</a>
 			<a href="in-between-places.html">In Between Places</a>
@@ -30,7 +35,7 @@
 		</div>
 	<a href="editorial.html">Editorial</a>
 	<a href="archive.html">Archive</a>
-	<a href="about.html" id="here">About</a>
+	<a href="about.html">About</a>
 	
 	</div>
 	
@@ -41,6 +46,22 @@
 		<a href="https://www.linkedin.com/in/ha-jade-nguyen/"><img src="media/linkedin.svg" alt="linkedin icon" width="30px"></a>
 	</div>
 </div>
+	
+<script>
+function openNav() {
+		document.getElementById("sidenav").style.width = "100vw"
+		document.getElementById("closebtn").style.display = "block"
+		document.getElementById("menu-icon").style.display = "none"
+}
+	
+function closeNav() {
+		document.getElementById("sidenav").style.width = "0"
+		document.getElementById("closebtn").style.display = "none"
+		document.getElementById("menu-icon").style.display = "block"
+}
+	
+</script>	
+
 	
 <div class="main">
 	<img src="media/bio.jpg" alt="bio photo" id="biophoto">

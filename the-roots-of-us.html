@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="sidenav">
+<div id="sidenav">
 	<div class="menu">
 	<a href="index.html" id="header">Jade Nguyen</a>
 	
@@ -42,6 +42,21 @@
 	</div>
 </div>
 	
+<script>
+function openNav() {
+		document.getElementById("sidenav").style.width = "100vw"
+		document.getElementById("closebtn").style.display = "block"
+		document.getElementById("menu-icon").style.display = "none"
+}
+	
+function closeNav() {
+		document.getElementById("sidenav").style.width = "0"
+		document.getElementById("closebtn").style.display = "none"
+		document.getElementById("menu-icon").style.display = "block"
+}
+	
+</script>	
+
 <div class="main">
  	<h1>The Roots of Us</h1>
 	<div class="caption">
