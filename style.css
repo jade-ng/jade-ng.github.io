@@ -8,7 +8,7 @@ body {
 }
 
 /* Fixed sidenav, full height */
-.sidenav {
+#sidenav {
   height: 100%;
   width: 25vw;
   position: fixed;
@@ -366,3 +366,146 @@ div.gallery:hover .workdesc{
 	background: none;
 }
 
+#closebtn {
+	display: none;
+}
+
+#menu-icon {
+	display: none;
+}
+
+@media screen and (min-width: 721px) and (max-width: 990px) , (max-device-aspect-ratio: 4/3) {
+	#welcome {
+		right: 0;
+	}
+	
+	#welcome2 {
+		display: none;
+	}
+	
+	#view-projects {
+		display: none;
+	}
+	
+	div.workdesc {
+ 		display: block;
+		background: rgba(0,0,0,0.14)
+	}
+	
+	div.gallery {
+		right: 0;
+  		margin: auto;
+  		float: right;
+ 		height: 40vh;
+		margin-bottom: 20vh;
+	}
+	
+	.blank {
+		display: none;
+	}
+	
+}
+	
+@media screen and (max-width: 720px) {
+	#welcome {
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		width: 80vw;
+		height: auto;
+	}
+	
+	#menu-icon {
+		display: block;
+		width: 10vw;
+		position: absolute;
+		top: 2em;
+		left: 2em;
+		z-index: 3;
+	}
+	
+	#closebtn {
+		text-align: center;
+		font-size: 36px;
+		position: absolute;
+		right: 25px;
+		padding: 0;
+		top: 2vh;
+		z-index: 3;
+		display: none;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+	
+	.main {
+		overflow-x: hidden;
+		margin: 0;
+		width: 100vw;
+		padding: 0;
+		padding-top: 20vh;
+		padding-bottom: 10vh;
+	}
+	
+	.slideshow-container {
+		margin-top: 5vh;
+  		width: 90vw;
+		height: 80vh;
+		margin: auto;
+	}
+		
+	#sidenav {
+		padding: 0;
+		padding-top: 10vh;
+		width: 0;
+		z-index: 2;
+	}
+	
+	#header {
+		padding-left: 0;
+		margin-left: 1.5em;
+		padding-bottom: 0;
+		margin-bottom: 10vh;
+	}
+	
+	body {
+		overflow-x: hidden;
+	}
+	
+	h1 {
+		margin-left: 1.4em;
+	}
+	
+	.caption {
+		margin-left: 2em;
+		width: 70vw;
+		margin-bottom: 8vh;
+		margin-top: 5vh;
+	}
+	
+	.caption p {
+		width: 80vw;
+	}
+	
+	.section {
+		margin-left: 5vw;
+		max-width: none;
+		width: 80vw;
+	}
+	
+	#biophoto {
+		display: none;
+	}
+	
+	div.gallery {
+		right: 0;
+  		margin: auto;
+  		float: right;
+ 		height: 40vh;
+		margin-bottom: 20vh;
+	}
+	
+	.blank {
+		display: none;
+	}
+}
