@@ -293,6 +293,7 @@ div.desc {
 }
 
 div.workdesc {
+	font-weight: bold;
   display: none;
   position: relative;
   color: rgba(240,240,240,1.00);
