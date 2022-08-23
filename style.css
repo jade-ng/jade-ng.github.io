@@ -1,0 +1,466 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: 'Urbanist', sans-serif;
+}
+
+/* Fixed sidenav, full height */
+#sidenav {
+  height: 100%;
+  width: 25vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links */
+.menu a {
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  padding-left: 3em;
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+  display: block;
+  background: none;
+  text-align: left;
+}
+
+/* On mouse-over */
+.menu a:hover {
+  font-weight: bold;
+}
+
+.menu a:focus {
+  background-color: #fad43c;
+}
+
+#here {
+	font-weight: bold;
+}
+
+.dropdown-container {
+  padding-left: 1em;
+  margin: 0;
+}
+
+#header {
+	display: inline-block;
+	width: auto;
+	font-family: "Playfair Display", serif;
+	font-size: 2em;
+	padding: 0;
+	margin-left: 1.5em;
+	padding-bottom: 10px;
+	margin-bottom: 3em;
+	margin-top: 1em;
+}
+
+.footer-icon {
+	padding-left: 3em;
+	position: relative;
+	top: 8em;
+}
+
+.footer-icon a {
+	margin-right: 1em;
+	width: auto;
+	display: inline-block;
+	opacity: 0.5;
+	padding-bottom: 10px;
+}
+
+.footer-icon a:hover, .footer-icon a:focus {
+	opacity: 1;
+	border-bottom: solid 5px #fad43c;
+	transform: translateY(-5px)
+}
+
+/* Main content */
+.main {
+  width: 75vw;
+  margin-left: 25vw; /* Same as the width of the sidenav */
+  font-size: 1em;
+  padding-top: 3em;
+  padding-bottom: 5em;
+  padding-left: 2em;
+  overflow-x: hidden;
+}
+
+.main img:hover {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+#welcome {
+	height: 80vh;
+	position: absolute;
+	z-index: 1;
+}
+
+#welcome2 {
+	width: 40vw;
+	position: absolute;
+	right: 3em;
+	bottom: 0;
+	z-index: 2;
+}
+
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 1.5em;
+	padding-bottom: 0.1em;
+	border-bottom: solid 5px #fad43c;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.main a {		
+	text-decoration: none;
+		}
+.main a:link { 
+	color: #2B356E;
+	background-color: #ffc83f;
+		}
+.main a:visited {
+	color: #46443e;
+	background-color: #f6efdc;
+		}
+.main a:hover {
+	background-color: #a1b130;
+	color: white;
+		}
+.main a:active {
+	background-color: #ffc83f;
+	color: #2B356E;
+		}
+
+
+
+#biophoto {
+	max-height: 70vh;
+	max-width: 20vw;
+	position: fixed;
+	bottom: 2em;
+	right: 5em;
+}
+
+#biophoto:hover {
+	-webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+.noninvert {
+	overflow-x: hidden;
+}
+
+.noninvert img:hover {
+	 filter: none;
+}
+
+.section {
+	display: block;
+	max-width: 40vw;
+}
+
+.caption {
+	margin-top: 1em;
+	margin-bottom: 5em;
+}
+
+.caption p {
+	font-size: 0.8em;
+	width: 60vw;
+}
+
+.mySlides {
+	display: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mySlides img {
+	vertical-align: middle;
+	max-width: 80%;
+	max-height: 80vh;
+	object-fit: contain;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 70vw;
+  height: 90vh;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #858585;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #858585;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #858585;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	opacity: 0.3;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  height: 40vh;
+}
+
+div.gallery:hover .desc{
+  font-weight: bold;
+}
+
+div.gallery img {
+  height: 100%;
+  width: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.workdesc {
+  display: none;
+  position: relative;
+  color: rgba(240,240,240,1.00);
+  top: -25vh;
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery:hover .workdesc{
+  display: block;
+}
+
+.gallery a:link {
+	background: none;
+	border: none;
+	color: none;
+}
+
+.gallery a:hover {
+	background: none;
+}
+
+#closebtn {
+	display: none;
+}
+
+#menu-icon {
+	display: none;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+	
+	.main {
+	padding: 20px;
+}
+}
+
+@media screen and (min-width: 721px) and (max-width: 990px) , (max-device-aspect-ratio: 4/3) {
+	.main {
+	padding: 0 20px;
+}
+	#welcome {
+		right: 0;
+	}
+	
+	#welcome2 {
+		display: none;
+	}
+	
+	
+	div.workdesc {
+ 		display: block;
+		background: rgba(0,0,0,0.14)
+	}
+	
+	div.gallery {
+		padding-left: 5em;
+		margin-left: 2em;
+  		float: right;
+ 		height: 35vh;
+	}
+	
+	.blank {
+		display: none;
+	}
+	
+}
+	
+@media screen and (max-width: 720px) {
+	#welcome {
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		width: 80vw;
+		height: auto;
+	}
+	
+	#menu-icon {
+		display: block;
+		width: 7vw;
+		position: absolute;
+		top: 2em;
+		left: 2em;
+		z-index: 3;
+	}
+	
+	#closebtn {
+		text-align: center;
+		font-size: 36px;
+		position: absolute;
+		right: 25px;
+		padding: 0;
+		top: 2vh;
+		z-index: 3;
+		display: none;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+	
+	.main {
+		overflow-x: hidden;
+		margin: 0;
+		width: 100vw;
+		padding: 0;
+		padding-top: 20vh;
+		padding-bottom: 10vh;
+	}
+	
+	.slideshow-container {
+		margin-top: 5vh;
+  		width: 90vw;
+		height: 80vh;
+		margin: auto;
+	}
+		
+	#sidenav {
+		padding: 0;
+		padding-top: 10vh;
+		width: 0;
+		z-index: 2;
+	}
+	
+	#header {
+		padding-left: 0;
+		margin-left: 1.5em;
+		padding-bottom: 0;
+		margin-bottom: 10vh;
+	}
+	
+	body {
+		overflow-x: hidden;
+	}
+	
+	h1 {
+		margin-left: 1.4em;
+	}
+	
+	.caption {
+		margin-left: 2em;
+		width: 70vw;
+		margin-bottom: 8vh;
+		margin-top: 5vh;
+	}
+	
+	.caption p {
+		width: 80vw;
+	}
+	
+	.section {
+		margin-left: 5vw;
+		max-width: none;
+		width: 80vw;
+	}
+	
+	#biophoto {
+		display: none;
+	}
+	
+	div.gallery {
+  		float: right;
+ 		height: 35vh;
+	}
+	
+	.blank {
+		display: none;
+	}
+	
+}
