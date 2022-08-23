@@ -320,7 +320,12 @@ div.gallery:hover .workdesc{
 }
 
 #menu-icon {
+	text-align: center;
 	display: none;
+	color: black;
+	font-weight: bold;
+	background: #ffc83f;
+	padding-right: 20px;
 }
 
 /* On smaller screens, decrease text size */
