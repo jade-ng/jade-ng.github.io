@@ -213,7 +213,7 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 12px;
   margin-top: -22px;
   color: #858585;
   font-weight: bold;
@@ -463,6 +463,10 @@ div.gallery:hover .workdesc{
 	div.gallery {
   		float: right;
  		height: 35vh;
+	}
+	
+	.prev, .next {
+		padding: 9px;
 	}
 	
 	.blank {
