@@ -258,7 +258,7 @@ p {
   cursor: pointer;
   height: 10px;
   width: 10px;
-  margin: 0 3px;
+  margin: 0 3px 20vh;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -343,7 +343,7 @@ div.gallery:hover .workdesc{
 div.gallery2 {
   margin: 5px;
   float: left;
-  height: 20vh;
+  height: 15vh;
   opacity: 0.6;
 }
 
@@ -367,7 +367,7 @@ div.gallery2 img {
 
 .slides {
 	position: relative;
-	top: 20vh;
+	top: 10vh;
 }
 
 /* On smaller screens, decrease text size */
