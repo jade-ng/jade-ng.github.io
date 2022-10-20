@@ -340,6 +340,7 @@ div.gallery:hover .workdesc{
 	background-color:rgba(0,0,0,0.00);
 }
 
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
