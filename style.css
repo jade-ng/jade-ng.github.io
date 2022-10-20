@@ -362,8 +362,8 @@ div.gallery2 img {
 }
 
 .slides {
-
-	margin-top: 30vh;
+	width: 70vw;
+	margin-top: 20vh;
 }
 
 /* On smaller screens, decrease text size */
@@ -459,6 +459,11 @@ div.gallery2 img {
   		width: 95vw;
 		height: 80vh;
 		margin: auto;
+	}
+	
+	.slides {
+		margin-top: 5vh;
+  		width: 95vw;
 	}
 		
 	#sidenav {
