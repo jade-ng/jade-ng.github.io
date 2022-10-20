@@ -340,6 +340,35 @@ div.gallery:hover .workdesc{
 	background-color:rgba(0,0,0,0.00);
 }
 
+div.gallery2 {
+  margin: 5px;
+  float: left;
+  height: 20vh;
+  opacity: 0.6;
+}
+
+
+div.gallery2:hover {
+	opacity: 1;
+}
+
+div.gallery2:hover img{
+ filter: invert(1);
+}
+
+div.gallery2:hover .desc{
+  font-weight: bold;
+}
+
+div.gallery2 img {
+  height: 100%;
+  width: auto;
+}
+
+.slides {
+	position: relative;
+	top: 20vh;
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
