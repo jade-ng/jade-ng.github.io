@@ -353,7 +353,7 @@ div.gallery2:hover {
 }
 
 div.gallery2:hover img{
- filter: invert(1);
+ filter: invert(0);
 }
 
 div.gallery2:hover .desc{
