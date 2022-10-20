@@ -261,7 +261,7 @@ p {
   margin: 0 3px 20vh;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   transition: background-color 0.6s ease;
 }
 
@@ -356,20 +356,14 @@ div.gallery2:hover img{
  filter: invert(0);
 }
 
-div.gallery2:hover .desc{
-  font-weight: bold;
-}
-
 div.gallery2 img {
   height: 100%;
   width: auto;
 }
 
 .slides {
-	position: relative;
-	top: 10vh;
-	margin-bottom: 20vh;
 
+	margin-top: 30vh;
 }
 
 /* On smaller screens, decrease text size */
