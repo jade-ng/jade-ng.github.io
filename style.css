@@ -65,6 +65,7 @@ body {
 }
 
 .footer-icon {
+	display: none;
 	padding-left: 3em;
 	position: relative;
 	top: 13.5em;
@@ -84,12 +85,13 @@ body {
 	transform: translateY(-5px)
 }
 
+
 /* Main content */
 .main {
   width: 75vw;
   margin-left: 25vw; /* Same as the width of the sidenav */
   font-size: 1em;
-  padding-top: 3em;
+  padding-top: 3.5em;
   padding-bottom: 5em;
   padding-left: 2em;
   overflow-x: hidden;
@@ -247,7 +249,7 @@ p {
 .numbertext {
   color: #858585;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 8px 12px;f
   position: absolute;
   top: 0;
 }
