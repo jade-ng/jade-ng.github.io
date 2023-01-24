@@ -110,7 +110,7 @@ body {
 }
 
 #welcome2 {
-	width: 55vw;
+	width: 40vw;
 	position: absolute;
 	right: 0;
 	top: 2em;
@@ -249,14 +249,14 @@ p {
 .numbertext {
   color: #858585;
   font-size: 12px;
-  padding: 8px 12px;f
+  padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-	opacity: 0.3;
+  opacity: 0.3;
   cursor: pointer;
   height: 10px;
   width: 10px;
@@ -364,6 +364,7 @@ div.gallery2 img {
 }
 
 .slides {
+	
 	width: 70vw;
 	margin-top: 20vh;
 }
@@ -403,6 +404,15 @@ div.gallery2 img {
   		float: right;
  		height: 35vh;
 	}
+	
+	h1 {
+		margin-left: 2em;
+	}
+	
+	.contact {
+		margin-left: 2em;
+	}
+	
 	
 	.blank {
 		display: none;
@@ -488,6 +498,14 @@ div.gallery2 img {
 	
 	h1 {
 		margin-left: 1.4em;
+	}
+	
+	.slides {
+		margin-left: 2em;
+	}
+	
+	.contact {
+		margin-left: 2em;
 	}
 	
 	.caption {
