@@ -64,27 +64,6 @@ body {
 	margin-top: 1em;
 }
 
-.footer-icon {
-	display: none;
-	padding-left: 3em;
-	position: relative;
-	top: 13.5em;
-}
-
-.footer-icon a {
-	margin-right: 1em;
-	width: auto;
-	display: inline-block;
-	opacity: 0.5;
-	padding-bottom: 10px;
-}
-
-.footer-icon a:hover, .footer-icon a:focus {
-	opacity: 1;
-	border-bottom: solid 5px #fad43c;
-	transform: translateY(-5px)
-}
-
 
 /* Main content */
 .main {
@@ -197,7 +176,6 @@ p {
 }
 
 .mySlides img {
-	vertical-align: middle;
 	max-width: 80%;
 	max-height: 80vh;
 	object-fit: contain;
@@ -243,6 +221,11 @@ p {
   font-size: 15px;
   padding: 8px 12px;
   text-align: center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
 }
 
 /* Number text (1/3 etc) */
@@ -251,7 +234,7 @@ p {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -293,7 +276,7 @@ div.desc {
 }
 
 div.workdesc {
-	font-weight: bold;
+  font-weight: bold;
   display: none;
   position: relative;
   color: rgba(240,240,240,1.00);
@@ -369,16 +352,6 @@ div.gallery2 img {
 	margin-top: 20vh;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-	
-	.main {
-	padding: 20px;
-}
-	
-	
-}
 
 @media screen and (min-width: 721px) and (max-width: 990px) , (max-device-aspect-ratio: 4/3) {
 	.main {
@@ -395,7 +368,6 @@ div.gallery2 img {
 	
 	div.workdesc {
  		display: block;
-		background: rgba(0,0,0,0.14)
 	}
 	
 	div.gallery {
@@ -434,7 +406,7 @@ div.gallery2 img {
 		width: 7vw;
 		position: absolute;
 		top: 2em;
-		left: 2em;
+		right: 2.5em;
 		z-index: 3;
 	}
 	
@@ -444,7 +416,7 @@ div.gallery2 img {
 		position: absolute;
 		right: 25px;
 		padding: 0;
-		top: 2vh;
+		top: 3vh;
 		z-index: 3;
 		display: none;
 		text-decoration: none;
@@ -457,7 +429,7 @@ div.gallery2 img {
 		margin: 0;
 		width: 100vw;
 		padding: 0;
-		padding-top: 20vh;
+		padding-top: 10vh;
 		padding-bottom: 10vh;
 	}
 	
@@ -465,6 +437,23 @@ div.gallery2 img {
 	background: none;
 	color: #ffc83f;
 		}
+	
+	.mySlides {
+		margin: 0;
+  		position: absolute;
+  		top: 50%;
+ 		left: 50%;
+ 		-ms-transform: translate(-50%, -50%);
+ 		transform: translate(-50%, -50%);
+	}
+	
+	.numbertext {
+		display: none;
+	}
+	
+	.text {
+		display: none;
+	}
 	
 	.slideshow-container {
 		margin-top: 5vh;
@@ -487,7 +476,7 @@ div.gallery2 img {
 	
 	#header {
 		padding-left: 0;
-		margin-left: 1.5em;
+		margin-left: 1em;
 		padding-bottom: 0;
 		margin-bottom: 10vh;
 	}
@@ -497,11 +486,11 @@ div.gallery2 img {
 	}
 	
 	h1 {
-		margin-left: 1.4em;
+		margin-left: 1em;
 	}
 	
 	.slides {
-		margin-left: 2em;
+		margin-left: 1em;
 	}
 	
 	.contact {
@@ -509,10 +498,9 @@ div.gallery2 img {
 	}
 	
 	.caption {
-		margin-left: 2em;
-		width: 70vw;
+		margin-left: 1.5em;
+		width: 95vw;
 		margin-bottom: 8vh;
-		margin-top: 5vh;
 	}
 	
 	.caption p {
@@ -528,10 +516,25 @@ div.gallery2 img {
 	#biophoto {
 		display: none;
 	}
+
 	
 	div.gallery {
-  		float: right;
- 		height: 35vh;
+ 		width: 95vw;
+		position: relative;
+		top: 5vh;
+		padding: 0;
+  		height: 45vh;
+}
+	}
+	
+	div.workdesc {
+		position: absolute;
+		top: 80%;
+		right: 0;
+		margin-right: 4vw;
+		background: #fad43c;
+		padding: 2px 6px;
+		color: black
 	}
 	
 	.prev, .next {
@@ -542,22 +545,12 @@ div.gallery2 img {
 		display: none;
 	}
 	
-	.footer-icon {
-		top: 12em;
-	}
-	
 	#welcome {
 		z-index: 0;
+		bottom: 10vh;
 	}
 	
 	#view {
-		font-family: "Playfair Display", serif;
-		font-size: 3em;
-		color: black;
-		position: absolute;
-		bottom: 70vh;
-		z-index: 1;
-		right: 0;
-		padding: 0;
+		display: none
 	}
 }
