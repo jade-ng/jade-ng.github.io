@@ -493,6 +493,19 @@ div.gallery2 img {
 		margin-left: 1em;
 	}
 	
+	.mySlides img {
+	width: 90%;
+	max-height: 90vh;
+	object-fit: contain;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 95vw;
+  height: 95vh;
+  position: relative;
+}
+	
 	.contact {
 		margin-left: 2em;
 	}
