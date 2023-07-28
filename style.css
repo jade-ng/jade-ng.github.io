@@ -276,13 +276,16 @@ div.desc {
 }
 
 div.workdesc {
-  font-weight: bold;
-  display: none;
-  position: relative;
-  color: rgba(240,240,240,1.00);
-  top: -25vh;
-  padding: 15px;
-  text-align: center;
+		display: none;
+		position: absolute;
+		top: 80%;
+		right: 0;
+		margin-right: 4vw;
+		background: #fad43c;
+		padding: 2px 6px;
+		color: black;
+		font-weight: 800;
+		font-size: 1.3em;
 }
 
 div.gallery:hover .workdesc{
@@ -347,7 +350,6 @@ div.gallery2 img {
 }
 
 .slides {
-	
 	width: 70vw;
 	margin-top: 20vh;
 }
@@ -493,7 +495,7 @@ div.gallery2 img {
 		margin-left: 1em;
 	}
 	
-	.mySlides img {
+	.mySlides {
 	width: 90%;
 	max-height: 90vh;
 	object-fit: contain;
@@ -537,17 +539,10 @@ div.gallery2 img {
 		top: 5vh;
 		padding: 0;
   		height: 45vh;
-}
 	}
 	
 	div.workdesc {
-		position: absolute;
-		top: 80%;
-		right: 0;
-		margin-right: 4vw;
-		background: #fad43c;
-		padding: 2px 6px;
-		color: black
+		font-size: 1em;
 	}
 	
 	.prev, .next {
