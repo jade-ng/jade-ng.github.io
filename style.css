@@ -70,7 +70,7 @@ body {
   width: 75vw;
   margin-left: 25vw; /* Same as the width of the sidenav */
   font-size: 1em;
-  padding-top: 3.5em;
+  padding-top: 2.5em;
   padding-bottom: 5em;
   padding-left: 2em;
   overflow-x: hidden;
@@ -82,18 +82,14 @@ body {
 }
 
 #welcome {
-	height: 80vh;
+	width: 75vw;
 	position: absolute;
 	bottom: 0;
-	z-index: 1;
+	z-index: -1;
 }
 
 #welcome2 {
-	width: 40vw;
-	position: absolute;
-	right: 0;
-	top: 2em;
-	z-index: -1;
+	display: none;
 }
 
 
@@ -107,8 +103,8 @@ h1 {
 }
 
 p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.8em;
 }
 
 .main a {		
@@ -138,7 +134,7 @@ p {
 	max-width: 20vw;
 	position: fixed;
 	bottom: 2em;
-	right: 5em;
+	right: 2em;
 }
 
 #biophoto:hover {
@@ -156,7 +152,7 @@ p {
 
 .section {
 	display: block;
-	max-width: 45vw;
+	max-width: 50vw;
 }
 
 .caption {
@@ -355,7 +351,7 @@ div.gallery2 img {
 }
 
 
-@media screen and (min-width: 721px) and (max-width: 990px) , (max-device-aspect-ratio: 4/3) {
+@media screen and (min-width: 721px) and (max-width: 980px) , (max-device-aspect-ratio: 4/3) {
 	.main {
 	padding: 0 20px;
 }

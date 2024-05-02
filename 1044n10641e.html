@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Vietnamese photographer/artist Jade Nguyen">
+<meta name="keywords" content="Photographer, Fine Arts, Vietnamese, Jade Nguyen, Artist, Photo, Jade Nguyen Photo, Vietnamese Photographer, Jade Nguyen Photography"><meta name="author" content="Jade Nguyen">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>10°44'44"N - 106°41'21"E | Jade Nguyen</title>
+</head>
+
+<body>
+	
+<span style="cursor: pointer" onclick="openNav()"><p id="menu-icon">MENU</p></span>
+	
+<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>		
+	
+<div id="sidenav">
+	<div class="menu">
+	<a href="index.html" id="header">Jade Nguyen</a>
+	
+	<a href="index.html">works</a>
+		<div class="dropdown-container">
+			<a href="trades-of-the-street.html">trades of the street</a>
+			<a href="commerced-culture.html" id="here">commerce(d) culture</a>
+			<a href="souvenir-views-of-home.html">souvenir views of home</a>
+			<a href="this-house-is-not-for-sale.html">this house is not for sale</a>
+			<a href="roadside-attraction.html">roadside attraction</a>
+			<a href="heritage.html">heritage</a>
+		</div>
+	<a href="editorial.html">editorial/commission</a>
+	<a href="archive.html">archive</a>
+	<a href="about.html">about</a>
+	<a href="contact.html">contact</a>
+	</div>
+</div>
+	
+<script>
+function openNav() {
+		document.getElementById("sidenav").style.width = "100vw"
+		document.getElementById("closebtn").style.display = "block"
+		document.getElementById("menu-icon").style.display = "none"
+}
+	
+function closeNav() {
+		document.getElementById("sidenav").style.width = "0"
+		document.getElementById("closebtn").style.display = "none"
+		document.getElementById("menu-icon").style.display = "block"
+}
+	
+</script>	
+
+<div class="main">
+<h1>10°44'44"N - 106°41'21"E</h1>
+<div class="caption">
+
+	</div>
+
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="/media/archive/1044n10641e/1.jpg" alt="page1">
+    <div class="text"></div>
+  </div>
+		
+	<div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="/media/archive/1044n10641e/2.jpg" alt="page2">
+    <div class="text"></div>
+  </div>
+		
+	<div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="/media/archive/1044n10641e/3.jpg" alt="page3">
+    <div class="text"></div>
+  </div>
+		
+	<div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="/media/archive/1044n10641e/4.jpg" alt="page4">
+    <div class="text"></div>
+	</div>
+
+
+	
+<!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+	
+</div>
+		
+<div class="slides">
+	<div class="gallery2" onclick="currentSlide(1)"><img src="/media/archive/1044n10641e/1.jpg" alt="page1"></div>
+	<div class="gallery2" onclick="currentSlide(2)"><img src="/media/archive/1044n10641e/2.jpg" alt="page2"></div>
+	<div class="gallery2" onclick="currentSlide(3)"><img src="/media/archive/1044n10641e/3.jpg" alt="page3"></div>
+	<div class="gallery2" onclick="currentSlide(4)"><img src="/media/archive/1044n10641e/4.jpg" alt="page4"></div>
+</div>
+	
+</div>	
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	
+	
+
+</body>
+</html>
