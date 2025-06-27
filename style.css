@@ -5,18 +5,21 @@ body {
 	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
-	font-family: 'Urbanist', sans-serif;
+	font-family: "Newsreader", serif;
+	background-color: black;
+	line-height: 1em;
 }
 
 /* Fixed sidenav, full height */
 #sidenav {
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 25vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: black;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -24,11 +27,10 @@ body {
 /* Style the sidenav links */
 .menu a {
   padding-bottom: 0.3em;
-  padding-top: 0.3em;
-  padding-left: 3em;
+  padding-left: 2em;
   text-decoration: none;
-  font-size: 1em;
-  color: black;
+  font-size: 0.9em;
+  color: #E5E5E5;
   display: block;
   background: none;
   text-align: left;
@@ -40,23 +42,32 @@ body {
 }
 
 .menu a:focus {
-  background-color: #fad43c;
+  color: #fad43c;
 }
 
 #here {
-	font-weight: bold;
+  color: #fad43c;
 }
 
 .dropdown-container {
+  padding: 0;
   padding-left: 1em;
+	padding-bottom: 0.2em;
   margin: 0;
+  font-size: 0.9em;
+	line-height: 0.9em;
+  font-family: "Montserrat", sans-serif; 
+}
+
+#phone-header {
+	display: none;
 }
 
 #header {
 	display: inline-block;
 	width: auto;
-	font-family: "Playfair Display", serif;
-	font-size: 2em;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2em;
 	padding: 0;
 	margin-left: 1.5em;
 	padding-bottom: 10px;
@@ -64,14 +75,18 @@ body {
 	margin-top: 1em;
 }
 
+#header:hover {
+	font-weight: normal;
+}
 
 /* Main content */
 .main {
+  color: #E5E5E5;
   width: 75vw;
   margin-left: 25vw; /* Same as the width of the sidenav */
   font-size: 1em;
-  padding-top: 2.5em;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   padding-left: 2em;
   overflow-x: hidden;
 }
@@ -81,30 +96,23 @@ body {
    filter: invert(1);
 }
 
-#welcome {
-	width: 75vw;
-	position: absolute;
-	bottom: 0;
-	z-index: -1;
-}
-
-#welcome2 {
-	display: none;
-}
-
 
 h1 {
-	font-family: "Playfair Display", serif;
-	font-size: 1.5em;
-	padding-bottom: 0.1em;
-	border-bottom: solid 5px #fad43c;
-	display: inline-block;
-	margin-bottom: 1em;
+	font-weight: 400;
+	color: #fad43c;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	margin-bottom: 0;
 }
 
 p {
 	margin-top: 0.3em;
-	margin-bottom: 0.8em;
+	margin-bottom: 0em;
+}
+
+strong {
+	font-weight: 500;
 }
 
 .main a {		
@@ -112,11 +120,11 @@ p {
 		}
 .main a:link { 
 	color: #2B356E;
-	background-color: #ffc83f;
+	color: #ffc83f;
 		}
 .main a:visited {
 	color: #46443e;
-	background-color: #f6efdc;
+	color: #f6efdc;
 		}
 .main a:hover {
 	background-color: #a1b130;
@@ -128,13 +136,13 @@ p {
 		}
 
 
-
 #biophoto {
 	max-height: 70vh;
 	max-width: 20vw;
 	position: fixed;
 	bottom: 2em;
-	right: 2em;
+	left: 1.5em;
+	z-index: 3;
 }
 
 #biophoto:hover {
@@ -153,6 +161,7 @@ p {
 .section {
 	display: block;
 	max-width: 50vw;
+	margin-bottom: 1em;
 }
 
 .caption {
@@ -161,8 +170,8 @@ p {
 }
 
 .caption p {
-	font-size: 0.8em;
-	width: 60vw;
+	width: 50vw;
+	line-height: 1em;
 }
 
 .mySlides {
@@ -172,16 +181,19 @@ p {
 }
 
 .mySlides img {
-	max-width: 80%;
+	max-width: 90%;
 	max-height: 80vh;
 	object-fit: contain;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  width: 70vw;
-  height: 90vh;
-  position: relative;
+	align-content: center;
+	left: 0;
+  	width: 68vw;
+  	height: 90vh;
+  	position: relative;
+	margin-left: 0;
 }
 
 /* Next & previous buttons */
@@ -254,7 +266,7 @@ p {
 div.gallery {
   margin: 5px;
   float: left;
-  height: 40vh;
+  height: 42vh;
 }
 
 div.gallery:hover .desc{
@@ -276,10 +288,10 @@ div.workdesc {
 		position: absolute;
 		top: 80%;
 		right: 0;
-		margin-right: 4vw;
 		background: #fad43c;
 		padding: 2px 6px;
 		color: black;
+		font-family: "Montserrat", sans-serif;
 		font-weight: 800;
 		font-size: 1.3em;
 }
@@ -303,32 +315,19 @@ div.gallery:hover .workdesc{
 }
 
 #menu-icon {
+	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	display: none;
-	color: black;
-	font-weight: bold;
-	border-bottom: solid 5px #fad43c;
-}
+	color: #e5e5e5;
+	font-weight: normal;
 
-#view {
-	display: block;
-	font-family: "Playfair Display", serif;
-	font-size: 1.5em;
-	color: black;
-	position: absolute;
-	right: 1em;
-	bottom: 2em;
-	}
-
-#view a:link {
-	background-color:rgba(0,0,0,0.00);
 }
 
 div.gallery2 {
-  margin: 5px;
-  float: left;
-  height: 15vh;
-  opacity: 0.6;
+	margin: 5px;
+	float: left;
+	height: 15vh;
+	opacity: 0.6;
 }
 
 
@@ -337,12 +336,12 @@ div.gallery2:hover {
 }
 
 div.gallery2:hover img{
- filter: invert(0);
+ 	filter: invert(0);
 }
 
 div.gallery2 img {
-  height: 100%;
-  width: auto;
+  	height: 100%;
+  	width: auto;
 }
 
 .slides {
@@ -350,75 +349,65 @@ div.gallery2 img {
 	margin-top: 20vh;
 }
 
+/* End of main code */
+
+/* Midsize displays*/
 
 @media screen and (min-width: 721px) and (max-width: 980px) , (max-device-aspect-ratio: 4/3) {
-	.main {
-	padding: 0 20px;
-}
-	#welcome {
-		right: 0;
-	}
-	
-	#welcome2 {
-		display: none;
-	}
-	
 	
 	div.workdesc {
- 		display: block;
+ 		display: none;
 	}
 	
 	div.gallery {
 		padding-left: 5em;
 		margin-left: 2em;
   		float: right;
- 		height: 35vh;
+ 		height: 50vh;
 	}
+
 	
-	h1 {
-		margin-left: 2em;
+	.caption p {
+		margin: 0;
+		padding: 0;
+		width: 65vw;
 	}
 	
 	.contact {
 		margin-left: 2em;
 	}
 	
-	
 	.blank {
 		display: none;
 	}
-	
 }
 	
+
+
+/* Phone displays*/
+
 @media screen and (max-width: 720px) {
-	#welcome {
-		right: 0;
-		bottom: 0;
-		z-index: 1;
-		width: 80vw;
-		height: auto;
-	}
-	
 	#menu-icon {
 		display: block;
-		width: 7vw;
+		width: 6vw;
 		position: absolute;
-		top: 2em;
-		right: 2.5em;
+		top: 6.8vh;
+		right: 5em;
 		z-index: 3;
+		font-size: 0.9em;
 	}
 	
 	#closebtn {
 		text-align: center;
 		font-size: 36px;
 		position: absolute;
-		right: 25px;
+		right: 50px;
 		padding: 0;
-		top: 3vh;
+		top: 7vh;
 		z-index: 3;
 		display: none;
 		text-decoration: none;
-		color: black;
+		color: #e5e5e5;
 		font-weight: bold;
 	}
 	
@@ -427,8 +416,9 @@ div.gallery2 img {
 		margin: 0;
 		width: 100vw;
 		padding: 0;
-		padding-top: 10vh;
+		padding-top: 7vh;
 		padding-bottom: 10vh;
+		line-height: 1.2em;
 	}
 	
 	.main a:hover {
@@ -437,27 +427,23 @@ div.gallery2 img {
 		}
 	
 	.mySlides {
-		margin: 0;
-  		position: absolute;
-  		top: 50%;
- 		left: 50%;
- 		-ms-transform: translate(-50%, -50%);
- 		transform: translate(-50%, -50%);
+		display: none;
 	}
 	
 	.numbertext {
 		display: none;
 	}
 	
-	.text {
+	.text .dot {
+		display: none;
+	}
+	
+	.prev, .next {
 		display: none;
 	}
 	
 	.slideshow-container {
-		margin-top: 5vh;
-  		width: 95vw;
-		height: 80vh;
-		margin: auto;
+		display: none;
 	}
 	
 	.slides {
@@ -467,16 +453,26 @@ div.gallery2 img {
 		
 	#sidenav {
 		padding: 0;
-		padding-top: 10vh;
+		padding-top: 7vh;
 		width: 0;
 		z-index: 2;
 	}
 	
+	#phone-header {
+		display: inline-block;
+		width: auto;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1.2em;
+		margin-left: 1.5em;
+		padding-bottom: 2em;
+		margin-top: 0;
+	}
+	
 	#header {
 		padding-left: 0;
-		margin-left: 1em;
 		padding-bottom: 0;
 		margin-bottom: 10vh;
+		margin-top: 0;
 	}
 	
 	body {
@@ -484,28 +480,11 @@ div.gallery2 img {
 	}
 	
 	h1 {
-		margin-left: 1em;
+		margin-left: 1.5em;
 	}
-	
-	.slides {
-		margin-left: 1em;
-	}
-	
-	.mySlides {
-	width: 90%;
-	max-height: 90vh;
-	object-fit: contain;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 95vw;
-  height: 95vh;
-  position: relative;
-}
 	
 	.contact {
-		margin-left: 2em;
+		margin-left: 1.5em;
 	}
 	
 	.caption {
@@ -516,18 +495,40 @@ div.gallery2 img {
 	
 	.caption p {
 		width: 80vw;
+		margin-bottom: 1em;
 	}
 	
 	.section {
-		margin-left: 5vw;
 		max-width: none;
-		width: 80vw;
+		width: 90vw;}
+	
+	.section p {
+		margin-left: 1.5em;
 	}
 	
-	#biophoto {
-		display: none;
+	div.gallery2 {
+		opacity: 1;
+		margin-left: 0;
+		height: auto;
 	}
-
+	
+	div.gallery2 img {
+		width: 80vw;
+		height: auto;
+		margin-left: 1.5em;
+	}
+	
+	
+	#biophoto {
+		display: block;
+		position: relative;
+		top: 0;
+		max-width: none;
+		width: 80%;
+		object-fit: cover;
+		z-index: 1;
+		margin-bottom: 2em;
+	}
 	
 	div.gallery {
  		width: 95vw;
@@ -538,23 +539,14 @@ div.gallery2 img {
 	}
 	
 	div.workdesc {
+		display: block;
 		font-size: 1em;
-	}
-	
-	.prev, .next {
-		padding: 8px;
 	}
 	
 	.blank {
 		display: none;
 	}
 	
-	#welcome {
-		z-index: 0;
-		bottom: 10vh;
-	}
+
 	
-	#view {
-		display: none
-	}
 }
