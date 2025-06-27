@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	font-family: "Newsreader", serif;
 	background-color: black;
-	line-height: 1em;
+	line-height: 1.2em;
 }
 
 /* Fixed sidenav, full height */
@@ -20,6 +20,7 @@ body {
   top: 0;
   left: 0;
   background-color: black;
+  line-height: 1.2em;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -52,10 +53,10 @@ body {
 .dropdown-container {
   padding: 0;
   padding-left: 1em;
-	padding-bottom: 0.2em;
+  padding-bottom: 0.2em;
   margin: 0;
   font-size: 0.9em;
-	line-height: 0.9em;
+  line-height: 1em;
   font-family: "Montserrat", sans-serif; 
 }
 
@@ -171,7 +172,6 @@ strong {
 
 .caption p {
 	width: 50vw;
-	line-height: 1em;
 }
 
 .mySlides {
@@ -292,7 +292,7 @@ div.workdesc {
 		padding: 2px 6px;
 		color: black;
 		font-family: "Montserrat", sans-serif;
-		font-weight: 800;
+		font-weight: 600;
 		font-size: 1.3em;
 }
 
@@ -347,6 +347,10 @@ div.gallery2 img {
 .slides {
 	width: 70vw;
 	margin-top: 20vh;
+}
+
+.contact {
+	margin-top: 1em;
 }
 
 /* End of main code */
