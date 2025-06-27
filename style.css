@@ -462,13 +462,14 @@ div.gallery2 img {
 		display: inline-block;
 		width: auto;
 		font-family: "Montserrat", sans-serif;
-		font-size: 1.2em;
+		font-size: 1em;
 		margin-left: 1.5em;
 		padding-bottom: 2em;
 		margin-top: 0;
 	}
 	
 	#header {
+		font-size: 1em;
 		padding-left: 0;
 		padding-bottom: 0;
 		margin-bottom: 10vh;
