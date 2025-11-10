@@ -162,7 +162,7 @@ strong {
 
 .section {
 	display: block;
-	max-width: 50vw;
+	max-width: 60vw;
 	margin-bottom: 1em;
 }
 
@@ -556,3 +556,4 @@ div.gallery2 img {
 
 	
 }
+
