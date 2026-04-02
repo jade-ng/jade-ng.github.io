@@ -5,14 +5,15 @@ body {
 	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Figtree", sans-serif;
 	background-color: black;
 	line-height: 1.2em;
+	
 }
 
 /* Fixed sidenav, full height */
 #sidenav {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Figtree", sans-serif;
   height: 100%;
   width: 25vw;
   position: fixed;
@@ -57,7 +58,7 @@ body {
   margin: 0;
   font-size: 0.9em;
   line-height: 1em;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Figtree", sans-serif; 
 }
 
 #phone-header {
@@ -67,12 +68,11 @@ body {
 #header {
 	display: inline-block;
 	width: auto;
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.2em;
+	font-family: "Funnel Display", sans-serif;
+	font-size: 1.5em;
 	padding: 0;
 	margin-left: 1.5em;
-	padding-bottom: 10px;
-	margin-bottom: 3em;
+	margin-bottom: 2.5em;
 	margin-top: 1em;
 }
 
@@ -89,6 +89,7 @@ body {
   padding-top: 2em;
   padding-bottom: 2em;
   padding-left: 2em;
+  padding-right: 2em; 
   overflow-x: hidden;
   line-height: 1.3em;
 }
@@ -102,7 +103,7 @@ body {
 h1 {
 	font-weight: 600;
 	color: #fad43c;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Figtree', sans-serif;
 	font-size: 1.1em;
 	text-transform: uppercase;
 	margin-bottom: 0;
@@ -191,7 +192,7 @@ strong {
 .slideshow-container {
 	align-content: center;
 	left: 0;
-  	width: 68vw;
+  	width: 70vw;
   	height: 90vh;
   	position: relative;
 	margin-left: 0;
@@ -267,7 +268,7 @@ strong {
 div.gallery {
   margin: 5px;
   float: left;
-  height: 42vh;
+  height: 40vh;
 }
 
 div.gallery:hover .desc{
@@ -286,13 +287,13 @@ div.desc {
 
 div.workdesc {
 		display: none;
-		position: absolute;
+		position: fixed;
 		top: 80%;
 		right: 0;
 		background: #fad43c;
 		padding: 2px 6px;
 		color: black;
-		font-family: "Montserrat", sans-serif;
+		font-family: "Figtree", sans-serif;
 		font-weight: 600;
 		font-size: 1.3em;
 }
@@ -316,7 +317,7 @@ div.gallery:hover .workdesc{
 }
 
 #menu-icon {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Figtree", sans-serif;
 	text-align: center;
 	display: none;
 	color: #e5e5e5;
@@ -386,7 +387,6 @@ div.gallery2 img {
 		display: none;
 	}
 }
-	
 
 
 /* Phone displays*/
@@ -466,18 +466,17 @@ div.gallery2 img {
 	#phone-header {
 		display: inline-block;
 		width: auto;
-		font-family: "Montserrat", sans-serif;
-		font-size: 1em;
+		font-family: "Funnel Display", sans-serif;
+		font-size: 1.5em;
 		margin-left: 1.5em;
 		padding-bottom: 2em;
 		margin-top: 0;
 	}
 	
 	#header {
-		font-size: 1em;
+		font-size: 1.5em;
 		padding-left: 0;
 		padding-bottom: 0;
-		margin-bottom: 10vh;
 		margin-top: 0;
 	}
 	
@@ -547,6 +546,7 @@ div.gallery2 img {
 	div.workdesc {
 		display: block;
 		font-size: 1em;
+		position: absolute;
 	}
 	
 	.blank {
@@ -556,4 +556,3 @@ div.gallery2 img {
 
 	
 }
-
